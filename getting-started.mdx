@@ -1,0 +1,127 @@
+---
+title: Getting Started with Andrew Piven
+description: Quickly set up your account and create your first documentation project to begin organizing your work.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Stable internet connection
+
+<Callout kind="info">
+
+Andrew Piven works best on desktop browsers. Mobile support is limited to viewing docs.
+
+</Callout>
+
+## Sign Up and Log In
+
+Create your account in under 2 minutes.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Navigate to `https://dashboard.andrewpiven.com`.
+  </Step>
+  <Step title="Register Account" icon="user-plus">
+    Click **Sign Up** and enter your email, name, and password. Verify your email via the confirmation link sent to your inbox.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard and sign in with your credentials. You'll land on the workspace overview.
+  </Step>
+</Steps>
+
+## Set Up Your Initial Workspace
+
+Customize your default workspace to match your workflow.
+
+<Steps>
+  <Step title="Select Workspace Type" icon="settings">
+    Choose **Documentation** as your primary workspace type from the setup wizard.
+  </Step>
+  <Step title="Configure Preferences" icon="sliders">
+    Set your brand color to `#3B82F6` and enable features like real-time collaboration.
+  </Step>
+  <Step title="Save and Continue" icon="check-circle">
+    Click **Finish Setup** to access your workspace dashboard.
+  </Step>
+</Steps>
+
+## Create Your First Project
+
+Organize your documentation into projects for better management.
+
+<Tabs>
+  <Tab title="Markdown Project" icon="file-text">
+    <Steps>
+      <Step title="New Project" icon="plus">
+        Click **New Project** in the sidebar and select **Markdown Docs**.
+      </Step>
+      <Step title="Name and Describe">
+        Enter `My First Docs` as the name and add a description: "Initial project for organizing notes."
+      </Step>
+    </Steps>
+
+````mdx
+```markdown
+# Welcome to My First Docs
+
+This is your first documentation page.
+```
+````
+  </Tab>
+  <Tab title="API Reference" icon="code">
+    Select **API Docs** project type. Use the built-in OpenAPI importer for `https://api.example.com/openapi.json`.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+
+Projects support unlimited pages. Link them using `[Internal Link](/project/page)` syntax.
+
+</Callout>
+
+## Basic Interface Tour
+
+Familiarize yourself with the key areas.
+
+<Columns cols={3}>
+  <Card title="Sidebar Navigation" icon="menu" href="#sidebar">
+    Access projects, pages, settings, and search. Pin frequent projects for quick access.
+  </Card>
+  <Card title="Editor Panel" icon="edit-3" href="#editor">
+    Write in MDX with live preview. Supports components like `<Callout>` and code highlighting.
+  </Card>
+  <Card title="Preview Pane" icon="eye" href="#preview">
+    Real-time rendering of your docs. Toggle dark mode and test responsive layouts.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<CodeGroup tabs="CLI,REST API">
+````bash
+# Install CLI (optional)
+npm install -g @andrewpiven/cli
+
+# Create project via CLI
+apiven project create my-docs --type markdown
+````
+
+```bash
+# Or use REST API
+curl -X POST https://api.andrewpiven.com/v1/projects \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{"name": "CLI Project", "type": "markdown"}'
+```
+</CodeGroup>
+
+Explore advanced features like custom domains and integrations. Your first project is ready—start editing!
+
+<Callout kind="success">
+
+Congratulations! You've set up Andrew Piven. Share your project via public URL: `https://docs.andrewpiven.com/my-first-docs`.
+
+</Callout>

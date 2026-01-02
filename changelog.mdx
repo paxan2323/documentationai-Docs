@@ -1,0 +1,127 @@
+---
+title: Changelog
+description: Track the latest updates, new features, and improvements in Andrew Piven.
+---
+
+## Recent Updates
+
+Stay informed about all changes to Andrew Piven. You receive notifications for major releases, new features, and critical fixes through your dashboard.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation spaces
+- Introduced advanced search with full-text indexing across all pages
+- New integration with GitHub for automatic repo syncing
+
+## Improvements
+
+- Enhanced performance with 40% faster page loads
+- Improved mobile responsiveness for better editing on devices
+- Updated editor with syntax highlighting for 20+ languages
+
+## Bug Fixes
+
+- Fixed markdown rendering issues with nested lists
+- Resolved authentication errors during session timeouts
+- Patched export functionality for large documents
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Custom themes support with your brand color `#3B82F6`
+- Embed external content like Figma prototypes directly
+- Version history with diff viewer for tracking changes
+
+## Bug Fixes
+
+- Corrected table alignment in preview mode
+- Fixed keyboard shortcuts conflicting with browser defaults
+- Stabilized drag-and-drop for page reordering
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core documentation workspace with unlimited pages
+- Rich text editor with MDX component support
+- User management for team collaboration
+
+## Breaking Changes
+
+- Updated API endpoints to use `{version}/` prefix
+- Removed legacy YAML frontmatter validation
+
+To migrate, update your scripts:
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Old
+const apiUrl = 'https://api.example.com/docs';
+
+// New
+const apiUrl = 'https://api.example.com/v1/docs';
+```
+
+```python
+# Old
+api_url = "https://api.example.com/docs"
+
+# New
+api_url = "https://api.example.com/v1/docs"
+```
+</CodeGroup>
+
+</Update>
+
+## Upcoming Changes
+
+Preview what's coming next to plan your workflows.
+
+<Columns cols={3}>
+  <Card title="AI Assistant" icon="zap" href="#">
+    Automated content generation and summaries.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="#">
+    Page views, edit history, and usage insights.
+  </Card>
+  <Card title="Plugin System" icon="puzzle" href="#">
+    Extend functionality with custom components.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+Check the [roadmap](https://dashboard.example.com/roadmap) regularly. You enable beta features in your settings to test early.
+</Callout>
+
+## How to Stay Updated
+
+Follow these steps to ensure you never miss a release.
+
+<Steps>
+  <Step title="Enable Notifications" icon="bell">
+    Go to your account settings and toggle email updates.
+  </Step>
+  <Step title="Subscribe to RSS" icon="rss">
+    Add `/changelog.xml` to your feed reader.
+  </Step>
+  <Step title="Join Community" icon="users">
+    Participate in the Discord server for announcements.
+  </Step>
+</Steps>
+
+<Expandable title="Migration Guide for v1.2.0" default-open="false">
+
+If you encounter issues after updating:
+
+1. Clear your browser cache
+2. Re-authenticate your GitHub integration
+3. Review custom themes for compatibility with `#3B82F6`
+
+</Expandable>
